@@ -1,0 +1,6 @@
+image: androidsdk/android-30
+
+tasks:
+  - name: Build Debug APK
+    command: |
+      ./gradlew assembleDebug --stacktrace
