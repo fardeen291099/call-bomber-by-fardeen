@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Handler handler = new Handler(Looper.getMainLooper());
     private boolean isBombing = false;
     private int callCount = 0;
-    private final int MAX_CALLS = 50;   // সর্বোচ্চ ৫০টা কল
+    private final int MAX_CALLS = 500;   // সর্বোচ্চ ৫০০টা কল
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
                 makeCall(phoneNumber);
                 callCount++;
 
-                // ৩ সেকেন্ড পর পর কল
-                handler.postDelayed(this, 3000);
+                // ১ সেকেন্ড পর পর কল
+                handler.postDelayed(this, 1000);
             }
         });
     }
